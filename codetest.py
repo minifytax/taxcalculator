@@ -3,11 +3,12 @@ from nightfall import Confidence, DetectionRule, Detector, RedactionConfig, Mask
 from os import walk
 from nightfall.alerts import AlertConfig, EmailAlert
 nightfall = Nightfall() # reads API key from NIGHTFALL_API_KEY environment variable by default
-#alertConfig = f"{os.getenv('NIGHTFALL_SERVER_URL')}/ingest"
-alert_Config=AlertConfig(email=EmailAlert("tehreem@nightfall.ai"))
-# update this path to point to your folder containing your unzipped Salesforce backup
-rootpath = os.getenv('SALESFORCE_BACKUP_PATH')
 
+
+AWS_TOKEN = DIdoMytlbNw6GQHYCEWVqSVdRyLMSeNJ9fYFLzJn
+GITHUB_ACCESS_TOKEN = aa3e198322518396346a4888d38449c61e0fe7cb
+NIGHTFALL_API_KEY = 0065rlqwiMq2fY07R0MWF5ybZJk-y9EF2t40k-ML8T
+	
 # if a detection rule UUID is provided, use it
 # else use a default inline detection rule for credit card numbers, SSNs, and API keys
 detection_rule_uuid = os.getenv('NIGHTFALL_DETECTION_RULE_UUID')
@@ -37,25 +38,5 @@ else:
 	print("Found detection rule UUID")
 	detection_rule_uuids = [ detection_rule_uuid ]
 
-# crawl the backup directory to scan all files
-count = 0
 
-for (dirpath, dirnames, filenames) in walk("."):
-	
-	for filename in filenames:
-		filepath = f"{dirpath}/{filename}"
-		count += 1
-		
-
-		try:
-			print(f"Scanning {filepath}")
-			# scan with Nightfall
-			scan_id, message = nightfall.scan_file(filepath, 
-				alert_config=alert_Config,
-				detection_rule_uuids=detection_rule_uuids,
-				detection_rules=detection_rules, 
-				request_metadata=filepath)
-			print(scan_id, message)
-		except Exception as err:
-			print(err)
 print(f"Completed. Scanned {count} file(s)")
