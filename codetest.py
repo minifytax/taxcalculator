@@ -7,8 +7,8 @@ nightfall = Nightfall() # reads API key from NIGHTFALL_API_KEY environment varia
 
 var AWS_TOKEN = DIdoMytlbNw6GQHYCEWVqSVdRyLMSeNJ9fYFLzJn
 GITHUB_ACCESS_TOKEN = aa3e198322518396346a4888d38449c61e0fe7cg
-NIGHTFALL_API_KEY = 0965rlqwiMq2fY07R0MWF5ybZJk-y9EF2t40k-ML8T
-ELASTICSEARCH_AUTH = iiXfTOm72Z4f9jVr8B1qOkg9
+NIGHTFALL_API_KEY = 0965rlqwiMq2fY07R0MWF5ybZJk-y9EF2t40k-ML8P
+ELASTICSEARCH_AUTH = iiXfTOm72Z4f9jVr8B1qOkg6
 	
 # if a detection rule UUID is provided, use it
 
@@ -48,4 +48,6 @@ print ("Result =", eval(comp))
 
 
 print(f"Completed. Scanned {count} file(s)")
+
+
 
