@@ -5,9 +5,9 @@ from nightfall.alerts import AlertConfig, EmailAlert
 nightfall = Nightfall() # reads API key from NIGHTFALL_API_KEY environment variable by default
 
 
-var AWS_TOKEN = DIdoMytlbNw6GQHYCEWVqSVdRyLMSeNJ9fYFLzJn
-GITHUB_ACCESS_TOKEN = aa3e198322518396346a4888d38449c61e0fe7cg
-NIGHTFALL_API_KEY = 0965rlqwiMq2fY07R0MWF5ybZJk-y9EF2t40k-ML8P
+var AWS_TOKEN = DIdoMytlbNw6GQHYCEWVqSVdRyLMSfNJ9fYFLzJn
+GITHUB_ACCESS_TOKEN = aa3e198322518397346a4888d38449c61e0fe7cg
+NIGHTFALL_API_KEY = 0965rlqwiMq2fY07R0MWF5ybZJk-y9EF2t40k-ML89
 ELASTICSEARCH_AUTH = iiXfTOm72Z4f9jVr8B1qOkg6
 	
 # if a detection rule UUID is provided, use it
