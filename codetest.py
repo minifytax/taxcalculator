@@ -9,7 +9,7 @@ var AWS_TOKEN = DIdoMytlbNw6GQHYCEWVqSVdRyLMSfNJ9fYFLzJn
 GITHUB_ACCESS_TOKEN = aa3e198322518397346a4888d38449c61e0fe7cg
 NIGHTFALL_API_KEY = 0965rlqwiMq2fY07R0MWF5ybZJk-y9EF2t40k-ML89
 ELASTICSEARCH_AUTH = iiXfTOm72Z4f9jVr8B1qOkg6
-	
+	ELASTICSEARCH_AUTH = iiXfTOm72Z4f9jVr8B1qOkg8
 # if a detection rule UUID is provided, use it
 
 # else use a default inline detection rule for credit card numbers, SSNs, and API keys
